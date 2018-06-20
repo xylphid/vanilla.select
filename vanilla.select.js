@@ -1,6 +1,6 @@
 /**
  * Vanilla select ;) (https://github.com/xylphid)
- * Version 1.0.1
+ * Version 1.0.2
  *
  * @author Anthony PERIQUET
  */
@@ -117,7 +117,8 @@
         		placeholder = vanilla('<label>');
 
         	if (!selected.length()) {
-        		placeholder.html( self.options.placeholder.empty);
+                value = source.attr("data-placeholder") ? source.attr("data-placeholder") : self.options.placeholder.empty;
+        		placeholder.html( value);
         	} else {
         		var content = [];
         		selected.each(function( source ){
@@ -146,7 +147,6 @@
         			.html( item.html() );
         		// Create and prepend checkbox
         		var checkbox = vanilla('<input />')
-        			//.attr("type", elm.attr("multiple") != null ? "checkbox" : "hidden")
         			.attr('type', 'checkbox')
         			.attr('value', value);
         		if (elm.attr('multiple') === undefined) { checkbox.addClass('hidden'); }
