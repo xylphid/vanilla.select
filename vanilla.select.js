@@ -1,6 +1,6 @@
 /**
  * Vanilla select ;) (https://github.com/xylphid)
- * Version 1.0.0
+ * Version 1.0.1
  *
  * @author Anthony PERIQUET
  */
@@ -97,7 +97,8 @@
 
         	// Set width according to source
         	if (source.outerWidth() > parseInt(container.css('width'))) {
-        		container.css('width', source.outerWidth() + "px");
+                container.css('width', source.outerWidth() + 'px');
+        		container.css('flex-basis', source.outerWidth() + 'px');
         	}
 
         	source.css('display', 'none');

@@ -32,6 +32,7 @@
 	margin-right: 0.1em;
 }
 .vanilla-select > .options {
+	align-items: flex-start;
 	background: #FFF;
 	border: solid 0.1em;
 	border-radius: 0 0.3em 0.3em 0.3em;
