@@ -49,6 +49,7 @@
 }
 .vanilla-select.opened > .options {
 	display: flex;
+	overflow: hidden;
 }
 .vanilla-select .option {
 	padding: 0.2em 0.5em;
@@ -56,6 +57,7 @@
 }
 .vanilla-select .option.selected {
 	background: #E4E4E4;
+	width: 100%;
 }
 .vanilla-select > .options input.hidden {
 	display:none;
