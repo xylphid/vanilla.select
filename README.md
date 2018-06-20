@@ -30,6 +30,17 @@ Add `beautify` class to any of the select elements you want to transform.
 </select>
 ```
 
+You can also add `data-placeholder` attribute to define a specific default placeholder value.
+
+```html
+<select name="my-select" class="beautify" data-placeholder="Select items">
+    <option>item 1</option>
+    <option>item 2</option>
+    <option>item 4</option>
+</select>
+```
+It will display `Select items` when no option is selected.
+
 ## Options
 
 These are the supported options and their default values:
