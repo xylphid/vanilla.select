@@ -1,6 +1,6 @@
 /**
  * Vanilla select ;) (https://github.com/xylphid)
- * Version 1.0.2
+ * Version 1.0.3
  *
  * @author Anthony PERIQUET
  */
@@ -115,6 +115,11 @@
         _setPlaceholder: function( container, source ){
         	var selected = source.children('[selected]'),
         		placeholder = vanilla('<label>');
+
+            // Set width according to source
+            if (parseInt(container.css('width')) ) {
+                placeholder.css('width', container.css('width'));
+            }
 
         	if (!selected.length()) {
                 value = source.attr("data-placeholder") ? source.attr("data-placeholder") : self.options.placeholder.empty;
