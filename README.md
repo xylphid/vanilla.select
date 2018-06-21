@@ -4,7 +4,7 @@ vanilla.select is a simple overlay for select (multiple or not) you can customiz
 
 ## Requirements
 
-* [vanilla](https://github.com/xylphid/vanilla) (> 1.0.6)
+* [vanilla](https://github.com/xylphid/vanilla) (> 1.0.7)
 
 ## Installation
 
